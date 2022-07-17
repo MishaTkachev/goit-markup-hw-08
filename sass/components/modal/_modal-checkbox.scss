@@ -62,13 +62,13 @@
   @media screen and (max-width: 480px) {
     left: 20px;
   }
+}
 
-  .form-agreement-checkbox:checked + & {
-    background-color: var(--focus-color);
-    background-image: url(../images/icon\check\(1\).svg);
-    background-origin: border-box;
-    border-color: var(--focus-color);
-  }
+ {
+  background-color: var(--focus-color);
+  background-image: url(../images/icon-check);
+  background-origin: border-box;
+  border-color: var(--focus-color);
 }
 
 .conditions {
