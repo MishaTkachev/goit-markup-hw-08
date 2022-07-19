@@ -64,7 +64,7 @@
   }
 }
 
- {
+.form-agreement-checkbox:checked + .icon-disagree {
   background-color: var(--focus-color);
   background-image: url(../images/icon-check);
   background-origin: border-box;

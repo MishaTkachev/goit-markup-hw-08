@@ -98,6 +98,7 @@ picture {
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -319,8 +320,6 @@ picture {
   }
 }
 .nav-list__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
@@ -488,11 +487,11 @@ picture {
 @media screen and (max-width: 1199px) {
   .footer-list {
     display: block;
-    margin-bottom: 60px;
   }
 }
 .address {
   display: block;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
@@ -667,7 +666,6 @@ picture {
   .footer-input {
     width: 100%;
     margin-bottom: 20px;
-    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -675,7 +673,6 @@ picture {
     width: 450px;
     margin-bottom: 20px;
     display: block;
-    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -690,6 +687,7 @@ picture {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-form-title {
+  margin-bottom: 30px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -964,7 +962,6 @@ picture {
   min-height: 581px;
   transform: translate(-50%, -50%) scale(1);
   z-index: 1000;
-  overflow-y: scroll;
   padding: 40px 40px;
   background-color: #fff;
   border-radius: 4px;
@@ -1244,7 +1241,6 @@ textarea::placeholder {
 }
 .exelents-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 767px) {
@@ -1254,7 +1250,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .exelents-list-item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .exelents-list-item:nth-child(2n + 1) {
     margin-right: 30px;
@@ -1262,7 +1258,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .exelents-list-item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 3 * 30px) / 4);
     flex-wrap: nowrap;
   }
   .exelents-list-item:not(:last-child) {
@@ -1397,7 +1393,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team-list-item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .our-team-list-item:nth-child(2n-1) {
     margin-right: 30px;
@@ -1408,7 +1404,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .our-team-list-item {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 3 * 30px) / 4);
   }
   .our-team-list-item:not(:last-child) {
     margin-right: 30px;
@@ -1465,6 +1461,7 @@ textarea::placeholder {
 .our-team-social-item__link:hover .our-team-social-item__icons {
   fill: var(--hero-text-color);
 }
+
 @media screen and (max-width: 1199px) {
   .clients-box {
     display: flex;
@@ -1645,7 +1642,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-progect-item {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   .portfolio-progect-item:nth-child(2n + 1):not(:last-child) {
     margin-right: 30px;
@@ -1721,11 +1718,12 @@ textarea::placeholder {
 .project-cards-active {
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--main-transition);
 }
 .project-cards:hover .project-cards-active,
