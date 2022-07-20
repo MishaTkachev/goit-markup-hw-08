@@ -221,6 +221,7 @@ picture {
     margin-right: 30px;
   }
 }
+
 .td-contact-list__link {
   display: block;
   text-decoration: none;
@@ -237,6 +238,8 @@ picture {
 }
 @media screen and (min-width: 1200px) {
   .td-contact-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
     display: flex;
@@ -324,6 +327,7 @@ picture {
   color: var(--title-text-color);
   text-decoration: none;
   transition: color var(--main-transition);
+  font-weight: 500;
 }
 @media screen and (max-width: 767px) {
   .nav-list__link {
@@ -491,7 +495,6 @@ picture {
 }
 .address {
   display: block;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
@@ -555,6 +558,7 @@ picture {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-tablet {
+    margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
@@ -869,6 +873,7 @@ picture {
       ),
       url(../images/dhero1x-min.jpg);
     padding-top: 200px;
+    padding-bottom: 200px;
     height: 600px;
     max-width: 1600px;
     text-align: center;
@@ -951,6 +956,7 @@ picture {
 }
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   visibility: hidden;
 }
@@ -968,6 +974,7 @@ picture {
   transition: opacity var(--main-transition), transform var(--main-transition);
 }
 .backdrop.is-hidden .modal {
+  visibility: hidden;
   opacity: 0;
   transform: translate(-50%, -50%) scale(1.2);
 }
@@ -1503,7 +1510,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-item:nth-child(2n + 1) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1522,6 +1529,8 @@ textarea::placeholder {
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
   transition: border-color var(--main-transition);
 }
 @media screen and (max-width: 767px) {
@@ -1538,8 +1547,6 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .clients-link {
-    max-width: 170px;
-    padding: 16px 32px;
   }
 }
 .clients-link:hover,

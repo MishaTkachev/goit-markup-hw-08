@@ -257,6 +257,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .td-contact-list__link {
     font-size: 14px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     line-height: 1.14;
     display: flex;
     justify-content: center;
@@ -532,7 +534,6 @@ ul {
 
 .address {
   display: block;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
@@ -1057,6 +1058,7 @@ ul {
 }
 
 .backdrop.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -1076,6 +1078,7 @@ ul {
   transition: opacity var(--main-transition), transform var(--main-transition);
 }
 .backdrop.is-hidden .modal {
+  visibility: hidden;
   opacity: 0;
   transform: translate(-50%, -50%) scale(1.2);
 }
@@ -1669,7 +1672,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-item:nth-child(2n + 1) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -1679,7 +1682,7 @@ textarea::placeholder {
 }
 @media screen and (min-width: 1200px) {
   .clients-item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1694,7 +1697,6 @@ textarea::placeholder {
 @media screen and (max-width: 767px) {
   .clients-link {
     width: 210px;
-    padding: 16px 52px;
   }
 }
 @media screen and (max-width: 1199px) {
