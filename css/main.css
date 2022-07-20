@@ -1697,12 +1697,13 @@ textarea::placeholder {
 @media screen and (max-width: 767px) {
   .clients-link {
     width: 210px;
+    margin: 15px;
   }
 }
 @media screen and (max-width: 1199px) {
   .clients-link {
     max-width: 226px;
-    padding: 16px 60px;
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
